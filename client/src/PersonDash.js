@@ -14,11 +14,11 @@ function PersonDash() {
       <Navbar />
       <Toaster position="top-center" reverseOrder={false} />
       <ProfileInfo />
-      <div className="rides-section">
-        <div className="my-rides">
+      <div className="flex row justify-center mr-auto ml-auto mt-20 h-auto">
+        <div className="flex row justify-start ml-auto mr-auto">
           <ToggleList title="My Rides" items={futureRides} />
+          <ToggleList title="Offered Rides" items={offeredRides} />
         </div>
-        <ToggleList title="Offered Rides" items={offeredRides} />
       </div>
     </div>
   );
